@@ -1,0 +1,627 @@
+/* =====================================
+   RESET
+===================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f8fafc;
+    color: #172033;
+}
+
+
+/* =====================================
+   NAVBAR
+===================================== */
+
+.navbar {
+    height: 42px;
+
+    background: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 21%;
+
+    border-bottom: 1px solid #e5e7eb;
+}
+
+
+.logo {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+.favorite-btn {
+    border: 1px solid #e5e7eb;
+
+    background: white;
+
+    padding: 7px 12px;
+
+    border-radius: 7px;
+
+    font-size: 11px;
+
+    cursor: pointer;
+}
+
+
+.favorite-btn span {
+    background: #fbbf24;
+
+    padding: 3px 6px;
+
+    border-radius: 50%;
+
+    margin-left: 5px;
+}
+
+
+/* =====================================
+   HERO
+===================================== */
+
+.hero {
+    background: #e8f1ff;
+
+    min-height: 295px;
+
+    display: flex;
+
+    justify-content: center;
+
+    text-align: center;
+
+    padding-top: 54px;
+}
+
+
+.hero-content {
+    width: 600px;
+}
+
+
+.small-title {
+    color: #2563eb;
+
+    font-size: 8px;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+
+    margin-bottom: 10px;
+}
+
+
+.hero h1 {
+    font-size: 30px;
+
+    line-height: 1.1;
+
+    margin-bottom: 12px;
+}
+
+
+.subtitle {
+    font-size: 11px;
+
+    color: #64748b;
+
+    margin-bottom: 17px;
+}
+
+
+/* =====================================
+   SEARCH
+===================================== */
+
+.search-box {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 7px;
+}
+
+
+.search-box input {
+    width: 330px;
+
+    height: 31px;
+
+    border: 1px solid #d9dee7;
+
+    border-radius: 8px;
+
+    padding: 0 12px;
+
+    outline: none;
+
+    font-size: 10px;
+}
+
+
+.search-box input:focus {
+    border-color: #2563eb;
+}
+
+
+.search-box button {
+    height: 31px;
+
+    background: #2563eb;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 7px;
+
+    padding: 0 16px;
+
+    font-size: 10px;
+
+    cursor: pointer;
+}
+
+
+.search-box button:hover {
+    background: #1d4ed8;
+}
+
+
+/* =====================================
+   FILTER
+===================================== */
+
+.filters {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 7px;
+
+    margin-top: 9px;
+}
+
+
+.filters select {
+    height: 27px;
+
+    border: 1px solid #d9dee7;
+
+    border-radius: 6px;
+
+    background: white;
+
+    padding: 0 10px;
+
+    font-size: 10px;
+
+    outline: none;
+}
+
+
+/* =====================================
+   MAIN CONTAINER
+===================================== */
+
+.container {
+    width: 676px;
+
+    margin: 0 auto;
+
+    padding-top: 40px;
+}
+
+
+.section-header {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: end;
+
+    margin-bottom: 16px;
+}
+
+
+.discover {
+    color: #2563eb;
+
+    font-size: 8px;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+
+    margin-bottom: 8px;
+}
+
+
+.section-header h2 {
+    font-size: 15px;
+}
+
+
+#recipeTotal {
+    font-size: 10px;
+
+    color: #475569;
+}
+
+
+/* =====================================
+   RECIPE GRID
+===================================== */
+
+.recipe-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 14px;
+}
+
+
+/* =====================================
+   RECIPE CARD
+===================================== */
+
+.recipe-card {
+    background: white;
+
+    border-radius: 9px;
+
+    overflow: hidden;
+
+    border: 1px solid #e5e7eb;
+
+    transition: 0.2s;
+
+    box-shadow:
+        0 2px 5px rgba(0, 0, 0, 0.03);
+}
+
+
+.recipe-card:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+
+.recipe-card img {
+    width: 100%;
+
+    height: 118px;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+.recipe-content {
+    padding: 10px;
+}
+
+
+.recipe-cuisine {
+    color: #2563eb;
+
+    font-size: 7px;
+
+    font-weight: bold;
+
+    text-transform: uppercase;
+
+    margin-bottom: 5px;
+}
+
+
+.recipe-content h3 {
+    font-size: 11px;
+
+    margin-bottom: 6px;
+
+    line-height: 1.3;
+}
+
+
+.recipe-info {
+    display: flex;
+
+    gap: 6px;
+
+    align-items: center;
+
+    color: #64748b;
+
+    font-size: 7px;
+
+    margin-bottom: 9px;
+}
+
+
+/* =====================================
+   CARD BUTTON
+===================================== */
+
+.card-buttons {
+    display: flex;
+
+    gap: 6px;
+}
+
+
+.detail-btn {
+    flex: 1;
+
+    background: #172033;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 5px;
+
+    height: 24px;
+
+    font-size: 8px;
+
+    cursor: pointer;
+}
+
+
+.detail-btn:hover {
+    background: #0f172a;
+}
+
+
+.favorite-card-btn {
+    width: 27px;
+
+    height: 24px;
+
+    background: white;
+
+    border: 1px solid #dce1e8;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+
+.favorite-card-btn.active {
+    background: #fee2e2;
+
+    border-color: #fecaca;
+}
+
+
+/* =====================================
+   NO RESULT
+===================================== */
+
+.no-result {
+    grid-column: 1 / -1;
+
+    text-align: center;
+
+    padding: 50px;
+
+    color: #64748b;
+
+    font-size: 13px;
+}
+
+
+/* =====================================
+   MODAL
+===================================== */
+
+.modal {
+    position: fixed;
+
+    inset: 0;
+
+    background: rgba(15, 23, 42, 0.55);
+
+    display: none;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 20px;
+
+    z-index: 1000;
+}
+
+
+.modal.show {
+    display: flex;
+}
+
+
+.modal-content {
+    position: relative;
+
+    background: white;
+
+    width: 500px;
+
+    max-height: 85vh;
+
+    overflow-y: auto;
+
+    border-radius: 12px;
+
+    padding: 20px;
+}
+
+
+.close-btn {
+    position: absolute;
+
+    right: 15px;
+
+    top: 15px;
+
+    width: 28px;
+
+    height: 28px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: #f1f5f9;
+
+    cursor: pointer;
+}
+
+
+.modal-image {
+    width: 100%;
+
+    height: 220px;
+
+    object-fit: cover;
+
+    border-radius: 9px;
+
+    margin-bottom: 15px;
+}
+
+
+.modal-content h2 {
+    font-size: 20px;
+
+    margin-bottom: 10px;
+}
+
+
+.modal-info {
+    display: flex;
+
+    gap: 10px;
+
+    color: #64748b;
+
+    font-size: 11px;
+
+    margin-bottom: 18px;
+}
+
+
+.modal-content h3 {
+    margin-top: 18px;
+
+    margin-bottom: 8px;
+
+    font-size: 14px;
+}
+
+
+.modal-content ul,
+.modal-content ol {
+    padding-left: 20px;
+
+    font-size: 11px;
+
+    line-height: 1.8;
+
+    color: #475569;
+}
+
+
+.modal-favorite {
+    margin-top: 20px;
+
+    width: 100%;
+
+    height: 35px;
+
+    background: #2563eb;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+}
+
+
+/* =====================================
+   MOBILE
+===================================== */
+
+@media (max-width: 800px) {
+
+    .navbar {
+        padding: 0 20px;
+    }
+
+
+    .container {
+        width: auto;
+
+        margin: 0 20px;
+    }
+
+
+    .recipe-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .hero h1 {
+        font-size: 25px;
+    }
+
+
+    .hero-content {
+        width: 100%;
+
+        padding: 0 20px;
+    }
+
+
+    .search-box input {
+        width: 100%;
+    }
+
+
+    .recipe-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .modal-content {
+        width: 100%;
+    }
+
+}

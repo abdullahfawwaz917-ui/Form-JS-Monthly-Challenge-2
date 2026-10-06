@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>RecipeFinder</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         NAVBAR
+    ========================== -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            🍳 <span>RecipeFinder</span>
+        </div>
+
+        <button id="favoriteBtn" class="favorite-btn">
+            ❤️ Favorites
+            <span id="favoriteCount">0</span>
+        </button>
+
+    </header>
+
+
+    <!-- =========================
+         HERO
+    ========================== -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <p class="small-title">
+                | RECIPE EXPLORER
+            </p>
+
+            <h1>
+                What do you want to cook
+                <br>
+                today?
+            </h1>
+
+            <p class="subtitle">
+                Find simple recipes from around the world.
+            </p>
+
+
+            <!-- SEARCH -->
+
+            <div class="search-box">
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search recipes..."
+                >
+
+                <button id="searchBtn">
+                    Search
+                </button>
+
+            </div>
+
+
+            <!-- FILTER -->
+
+            <div class="filters">
+
+                <select id="cuisineFilter">
+
+                    <option value="all">
+                        All Cuisine
+                    </option>
+
+                </select>
+
+
+                <select id="difficultyFilter">
+
+                    <option value="all">
+                        All Difficulty
+                    </option>
+
+                    <option value="Easy">
+                        Easy
+                    </option>
+
+                    <option value="Medium">
+                        Medium
+                    </option>
+
+                    <option value="Hard">
+                        Hard
+                    </option>
+
+                </select>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         RECIPE SECTION
+    ========================== -->
+
+    <main class="container">
+
+        <div class="section-header">
+
+            <div>
+
+                <p class="discover">
+                    DISCOVER
+                </p>
+
+                <h2>
+                    Explore Recipes
+                </h2>
+
+            </div>
+
+            <p id="recipeTotal">
+                0 recipes
+            </p>
+
+        </div>
+
+
+        <!-- RECIPE CARD -->
+
+        <div
+            id="recipeContainer"
+            class="recipe-grid"
+        >
+        </div>
+
+    </main>
+
+
+    <!-- =========================
+         MODAL DETAIL
+    ========================== -->
+
+    <div
+        id="recipeModal"
+        class="modal"
+    >
+
+        <div class="modal-content">
+
+            <button
+                id="closeModal"
+                class="close-btn"
+            >
+                ✕
+            </button>
+
+            <div id="modalBody"></div>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+
